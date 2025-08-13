@@ -18,4 +18,9 @@ This subdir contains two subdirs: one has all the config files for the inspiral-
 ### posteriors
 
 This subdir contains all the relevant posteriors from the PE jobs. In particular, it has three subdirs corresponding to the three main results sectoins of the manuscript linked above. The subdir Three_Model_Injections contains the results pertaining to Sec. IV of the manuscript where 35 numerical relativity injections were recovered with the models SEOB, TPHM and XPHM. Accordingly, this subdir has three subdirs named after these models. Each one contains 35 text files named after either the SXS or BAM simulation catalog ID. Each file format is as follows
+
   [chirp_mass, small mass ratio, a1, a2, tilt1,tilt2, Delta_phi, right ascension, declination]
+
+The subdir IMR_consistency contains all the posteriors relevant to Sec. V of the draft. This subdir is divided into two subdirs separated by the cutoff used in the IMRCT (Schwarzschild vs Kerr). Each one of these subdirs contains three subdirs named after the models, each of which are further broken up into two subdirs which contain either the inspiral-only or merger-ringdown only posteriors.
+
+Finally, the subdir Model_mixture has the posteriors for Sec. VI of the manuscript. There are two subdirs inside: NR_informed and evidence_informed, each of which contain 35 text files though only the 30 with the SXS IDs are actually relevant since the BAM simulations have mass ratio 8:1 for which we could not apply our NR-informed method in its current version.
